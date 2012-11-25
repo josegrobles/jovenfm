@@ -1,0 +1,80 @@
+﻿@charset "UTF-8";
+/*
+ * Example of zRSSFeed Styling
+ *
+ * Version: 1.1.9
+ * (c) Copyright 2011-2012, Zazar Ltd
+ *
+ */
+
+
+.rssFeed {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 90%;
+	margin: 2em 3em;
+}
+.rssFeed a {
+	color: #444;
+	text-decoration: none;
+}
+.rssFeed a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+.rssHeader { padding: 0.2em 0; }
+
+.rssBody {  }
+.rssBody ul { list-style: none; }
+.rssBody ul, .rssRow, .rssRow h4, .rssRow p {
+	margin: 0;
+	padding: 0;
+}
+
+.rssRow { padding: 0.8em; }
+.rssRow h4 { font-size: 1.1em; }
+.rssRow div:after{
+content:'';
+display:block;
+border-color: transparent rgb(235, 55, 75) transparent transparent;
+border-style:solid;
+border-width:15px;
+height:0px;
+width:0px;
+position:absolute;
+z-index:-1000;
+margin-top:-16px;
+margin-left:-19px;
+}
+.rssRow div {
+position:relative;
+padding-left:4px;
+height:24px;
+	width:125px;
+	display:box;
+	background:none repeat scroll 0% 0% black;
+	font-size: 1.5em;
+	color: white;
+	margin: 0.2em;
+	font-family:museo;
+	margin-left:-26px;
+}
+
+.odd {
+ background-color: white;
+  margin-top:25px; 
+  width:650px;
+  }
+.even {
+ background-color: white; 
+margin-top:25px;
+width:650px;}
+
+.rssRow .rssMedia {
+	padding: 0.5em;
+	font-size: 1em;
+}
+@font-face{
+font-family:museo;
+src:url('../fonts/Museo_Slab_500-webfont.ttf');
+}

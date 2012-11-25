@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <head>
-	
+<!--METAS-->
 <title>Joven FM | Radio Valdepeñas</title>
 <meta name="description" content="Joven FM es la radio local de Valdepeñas hecha por y para jóvenes con muchísimas ganas y mejor programación.">
 <meta name="keywords" content="Radio, Joven FM, Valdepeñas, Radio de Valdepeñas, Radio, demigrancia inside, rodero ya haces tu esto">
@@ -10,10 +10,31 @@
 <meta property="og:url" content="http://www.jovenfm.es/">
 <meta property="og:image" content="http://www.jovenfm.es/logo.png">
 <meta property="og:description" content="Joven FM es la radio local de Valdepeñas hecha por y para jóvenes con muchísimas ganas y mejor programación.">
+<meta http-equiv="content-language" content="es" />
+<!--CSS-->
 <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+<link href="assets/css/jquery.zrssfeed.css" rel="stylesheet" type="text/css" />
+<!--JS-->
+<script src="http://code.jquery.com/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="assets/js/jquery.zrssfeed.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+  $('#test').rssfeed('http://radiocraft.tumblr.com/rss', {
+    header: false,
+	dateformat: 'dd/MM/yyyy',
+	media: true
+  });
+});
+</script>
+
 </head>
 <body>
 <img src="logo.png" id="logo">
+<div id="content">
+<div id="test"></div>
 
+
+
+</div>
 
 </body>
