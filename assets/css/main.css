@@ -1,0 +1,12 @@
+body{
+background:url('../img/bg.jpg') repeat fixed;
+margin: 0px 0px 0px 0px;
+}
+#logo{
+position:absolute;
+width:300px;
+height:auto;
+top:15px;
+left:50%;
+margin-left:-150px;
+}
