@@ -18,3 +18,11 @@ top:380px;
 margin-left:-600px;
 height:500px;
 }
+.tab{
+position:absolute;
+width:300px;
+height:auto;
+top:15px;
+left:50%;
+margin-left:-150px;
+}
